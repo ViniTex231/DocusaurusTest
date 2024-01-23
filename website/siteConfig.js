@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
+  title: 'Metrix', // Title for your website.
+  tagline: 'Uma solução para o Gerenciamento de Calibração',
   url: 'https://your-docusaurus-test-site.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -30,8 +30,8 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'test-site',
-  organizationName: 'facebook',
+  projectName: 'metrix-docs',
+  organizationName: 'Bosch-Metrix',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -40,40 +40,34 @@ const siteConfig = {
   headerLinks: [
     {doc: 'doc1', label: 'Docs'},
     {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    // {page: 'help', label: 'Help'},
+    // {blog: true, label: 'Blog'},
   ],
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
+  headerIcon: 'img/qman.png',
   footerIcon: 'img/favicon.ico',
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#0d403d',
-    secondaryColor: '#092c2a',
+    primaryColor: '#ff4000',
+    secondaryColor: '#ff0000',
   },
 
   /* Custom fonts for website */
-  /*
   fonts: {
     myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
+      "Poppins",
+      "sans-serif"
     ]
   },
-  */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} Metrix`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -85,8 +79,14 @@ const siteConfig = {
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
+
+  facebookAppId: '',
+  facebookComments: true,
+  //facebookPixelId: '352490515235776',
+  twitter: 'true',
+  twitterUsername: '',
   // No .html extensions for paths.
-  cleanUrl: true,
+  // cleanUrl: true,
 
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',

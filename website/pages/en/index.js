@@ -64,9 +64,9 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href="#try">Informações</Button>
+            <Button href={docUrl('doc1.html')}>Link 1</Button>
+            <Button href={docUrl('doc2.html')}>Link 2</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -95,9 +95,9 @@ class Index extends React.Component {
     const FeatureCallout = () => (
       <div
         className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
+        style={{textAlign: 'center', color: 'green', fontFamily: 'Poppins'}}>
         <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
+        <MarkdownBlock>Aqui estão funcionalidades do projeto</MarkdownBlock>
       </div>
     );
 
@@ -111,7 +111,7 @@ class Index extends React.Component {
               'The illustrations you see on this page are from unDraw.',
             image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
+            title: 'Landing pages',
           },
         ]}
       </Block>
@@ -125,7 +125,7 @@ class Index extends React.Component {
               'This is another description of how this project is useful',
             image: `${baseUrl}img/undraw_note_list.svg`,
             imageAlign: 'right',
-            title: 'Description',
+            title: 'Descrição',
           },
         ]}
       </Block>
