@@ -60,13 +60,11 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
+        {/* <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} /> */}
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
             <Button href="#try">Informações</Button>
-            <Button href={docUrl('doc1.html')}>Link 1</Button>
-            <Button href={docUrl('doc2.html')}>Link 2</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -95,9 +93,9 @@ class Index extends React.Component {
     const FeatureCallout = () => (
       <div
         className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center', color: 'green', fontFamily: 'Poppins'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>Aqui estão funcionalidades do projeto</MarkdownBlock>
+        style={{textAlign: 'center', color: 'black'}}>
+        <h2>Funcionalidades</h2>
+        <MarkdownBlock>Aqui estão as funcionalidades do Metrix</MarkdownBlock>
       </div>
     );
 
@@ -106,12 +104,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
+              'Desfrute de uma gestão de calibrações sem esforço com o Metrix, onde não apenas a realização de calibrações é simplificada, mas também a análise e avaliação dos resultados se tornam uma experiência intuitiva. Com nossa plataforma avançada, você tem a capacidade de extrair relatórios detalhados de calibrações passadas, possibilitando uma análise aprofundada e comparações significativas entre os resultados obtidos. Além disso, a funcionalidade robusta do Metrix permite uma visão holística do desempenho de seus instrumentos ao longo do tempo, fornecendo insights valiosos para aprimorar ainda mais a precisão e a confiabilidade de seus processos de medição. Transforme a gestão de calibrações em uma vantagem estratégica, elevando o controle e a eficiência com o Metrix.',
+            image: `${baseUrl}img/relatorioquasemenor.png`,
             imageAlign: 'left',
-            title: 'Landing pages',
+            title: 'Extraia Relatórios',
           },
         ]}
       </Block>
@@ -122,10 +118,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'This is another description of how this project is useful',
+              'O Metrix é a sua solução tudo-em-um para a gestão de calibrações. Aqui, em um único lugar, você tem acesso a uma gama de funcionalidades poderosas que simplificam todo o processo. Extraia relatórios detalhados de calibrações passadas, faça comparações entre os resultados de forma fácil e eficiente, tudo enquanto economiza preciosos minutos do seu dia. Com o Metrix, não apenas otimizamos suas operações, mas também proporcionamos a conveniência de ter várias ferramentas essenciais reunidas em um só lugar, permitindo que você alcance o máximo desempenho sem comprometer seu tempo valioso.',
             image: `${baseUrl}img/undraw_note_list.svg`,
             imageAlign: 'right',
-            title: 'Descrição',
+            title: 'Sua Solução!',
           },
         ]}
       </Block>
@@ -136,10 +132,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+              'Com o Metrix, sua ferramenta completa de gerenciamento de calibrações de instrumentos, oferecemos a capacidade não apenas de visualizar os resultados detalhados das calibrações passadas, mas também de acompanhar de forma eficiente e proativa todas as futuras calibrações necessárias para garantir a precisão e conformidade dos seus instrumentos. Simplifique o controle, ganhe visibilidade e assegure a excelência em suas práticas de medição com a poderosa plataforma Metrix. ',
+            image: `${baseUrl}img/painelcontrolemenor.png`,
             imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
+            title: 'Acompanhe as Calibrações dos instrumentos',
           },
         ]}
       </Block>
@@ -149,16 +145,16 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
+            content: 'Visualize o histórico de calibrações dos instrumentos',
+            image: `${baseUrl}img/paquimetro.png`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'Histórico de Calibrações',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
+            content: 'Visualize o status das calibrações',
+            image: `${baseUrl}img/computador.png`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Acompanhamento das Calibrações',
           },
         ]}
       </Block>
@@ -203,7 +199,7 @@ class Index extends React.Component {
           <LearnHow />
           <TryOut />
           <Description />
-          <Showcase />
+          {/* <Showcase /> */}
         </div>
       </div>
     );
