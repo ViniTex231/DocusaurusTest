@@ -104,7 +104,7 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Desfrute de uma gestão de calibrações sem esforço com o Metrix, onde não apenas a realização de calibrações é simplificada, mas também a análise e avaliação dos resultados se tornam uma experiência intuitiva. Com nossa plataforma avançada, você tem a capacidade de extrair relatórios detalhados de calibrações passadas, possibilitando uma análise aprofundada e comparações significativas entre os resultados obtidos. Além disso, a funcionalidade robusta do Metrix permite uma visão holística do desempenho de seus instrumentos ao longo do tempo, fornecendo insights valiosos para aprimorar ainda mais a precisão e a confiabilidade de seus processos de medição. Transforme a gestão de calibrações em uma vantagem estratégica, elevando o controle e a eficiência com o Metrix.',
+              'Desfrute de uma gestão de calibrações sem esforço com o Metrix, onde não apenas a realização de calibrações é simplificada, mas também a análise e avaliação dos resultados se tornam uma experiência intuitiva. Com nossa plataforma avançada, você tem a capacidade de extrair relatórios detalhados de calibrações passadas, possibilitando uma análise aprofundada e comparações significativas entre os resultados obtidos. Transforme a gestão de calibrações em uma vantagem estratégica, elevando o controle e a eficiência com o Metrix.',
             image: `${baseUrl}img/relatorioquasemenor.png`,
             imageAlign: 'left',
             title: 'Extraia Relatórios',
